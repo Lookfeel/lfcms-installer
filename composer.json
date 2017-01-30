@@ -1,5 +1,5 @@
 {
-    "name": "lookfeel/think-cms-installer",
+    "name": "lookfeel/lfcms-installer",
     "description": "LFCMS安装",
     "type": "composer-plugin",
     "homepage": "http://lookfeel.co/",
