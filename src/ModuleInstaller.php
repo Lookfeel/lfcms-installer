@@ -127,6 +127,6 @@ class ModuleInstaller extends BaseInstaller
      */
     public function supports($packageType)
     {
-        return 'think-cms-module' === $packageType;
+        return 'lfcms-module' === $packageType;
     }
 }
