@@ -1,0 +1,27 @@
+{
+    "name": "lookfeel/think-cms-installer",
+    "description": "LFCMS安装",
+    "type": "composer-plugin",
+    "homepage": "http://lookfeel.co/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "terranc",
+            "email": "terran.chao@lookfeel.co"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "lfcms\\composer\\": "src"
+        }
+    },
+    "extra": {
+        "class": "lfcms\\composer\\Plugin"
+    }
+}
