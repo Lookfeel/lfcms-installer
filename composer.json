@@ -18,10 +18,10 @@
     },
     "autoload": {
         "psr-4": {
-            "lfcms\\composer\\": "src"
+            "cms\\composer\\": "src"
         }
     },
     "extra": {
-        "class": "lfcms\\composer\\Plugin"
+        "class": "cms\\composer\\Plugin"
     }
 }
