@@ -1,5 +1,5 @@
 <?php
-namespace lfcms\composer;
+namespace cms\composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;

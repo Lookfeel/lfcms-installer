@@ -1,5 +1,5 @@
 <?php
-namespace lfcms\composer;
+namespace cms\composer;
 
 use Composer\Package\PackageInterface;
 use Composer\Repository\InstalledRepositoryInterface;
@@ -76,7 +76,7 @@ class ModuleInstaller extends BaseInstaller
             parent::update($repo, $initial, $target);
             
             $install_path = $this->getInstallPath($target);
-            
+            echo $install_path;
             try {
                 // application
                 $install_application_path = $install_path . DIRECTORY_SEPARATOR . 'application';
