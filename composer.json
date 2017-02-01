@@ -21,6 +21,7 @@
             "cms\\composer\\": "src"
         }
     },
+    "minimum-stability": "dev",
     "extra": {
         "class": "cms\\composer\\Plugin"
     }
