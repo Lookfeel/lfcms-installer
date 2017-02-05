@@ -70,7 +70,7 @@ class BaseInstaller extends LibraryInstaller
                 return $extra['public-path'];
             }
         }
-        
+
         return 'public';
     }
 }

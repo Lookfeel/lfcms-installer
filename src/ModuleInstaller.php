@@ -28,7 +28,7 @@ class ModuleInstaller extends BaseInstaller
                     $target_application_path = $this->getApplicationPath();
                     $this->filesystem->copyThenRemove($install_application_path, $target_application_path);
                 }
-                
+
                 // public
                 $install_public_path = $install_path . DIRECTORY_SEPARATOR . 'public';
                 if (is_dir($install_public_path)) {
@@ -91,21 +91,21 @@ class ModuleInstaller extends BaseInstaller
                     $target_extend_path = $this->getExtendPath();
                     $this->filesystem->copyThenRemove($install_extend_path, $target_extend_path);
                 }
-                
+
                 // public
                 $install_public_path = $install_path . DIRECTORY_SEPARATOR . 'public';
                 if (is_dir($install_public_path)) {
                     $target_public_path = $this->getPublicPath();
                     $this->filesystem->copyThenRemove($install_public_path, $target_public_path);
                 }
-                
+
                 // common
                 $extra = $target->getExtra();
                 if (isset($extra['cms-module']) && isset($extra['cms-file'])) {
                     // dir
                     $common_path = $this->getCmsPath() . DIRECTORY_SEPARATOR . 'common';
                     $this->filesystem->ensureDirectoryExists($common_path);
-                    
+
                     // copy
                     $common_file = $common_path . DIRECTORY_SEPARATOR . $extra['cms-module'] . '.php';
                     $this->filesystem->copyThenRemove($install_path . DIRECTORY_SEPARATOR . $extra['cms-file'], $common_file);
